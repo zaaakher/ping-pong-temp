@@ -5,6 +5,12 @@ import styles from "../styles/Home.module.css";
 import PingLogo from "../components/PingLogo";
 import PongLogo from "../components/PongLogo";
 import StyledButton from "../components/StyledButton";
+import {
+  GithubIcon,
+  InstagramIcon,
+  TelegramIcon,
+  TwitterIcon,
+} from "../components/SocialIcons";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -58,6 +64,52 @@ export default function Home() {
           </span>
         </a>
       </footer> */}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          marginBottom: 20,
+        }}
+      >
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <a
+            href="https://t.me/OfficialPingPong_Ann"
+            style={{ textAlign: "center", padding: 10 }}
+          >
+            <TelegramIcon height={40} />
+            <div>Ann</div>
+          </a>
+          <a
+            href="https://t.me/OFFICIALPINGPONG"
+            style={{ textAlign: "center", padding: 10 }}
+          >
+            <TelegramIcon height={40} />
+            <div>Chat</div>
+          </a>
+        </div>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <a
+            href="https://www.instagram.com/pingpongtoken/"
+            style={{ textAlign: "center", padding: 10 }}
+          >
+            <InstagramIcon height={40} />
+          </a>
+          <a
+            href="https://twitter.com/PingPongToken"
+            style={{ textAlign: "center", padding: 10 }}
+          >
+            <TwitterIcon height={40} />
+          </a>
+          <a
+            href="https://github.com/Falak-games"
+            style={{ textAlign: "center", padding: 10 }}
+          >
+            <GithubIcon height={40} />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
