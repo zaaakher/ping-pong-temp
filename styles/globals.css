@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Sooblack";
+  src: url("/Sooblack-Regular.otf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +21,15 @@ a {
 
 * {
   box-sizing: border-box;
+}
+:root {
+  box-sizing: border-box;
+  --borderR: 5px;
+  --primaryDark: #001e3c;
+  --blue: #0843ff;
+  --lightGrey: #e2e2e2;
+  /* --lightGrey: #eeeeee; */
+  --light: white;
+  --lightBlue: #ebefff;
+  --dark: black;
 }
